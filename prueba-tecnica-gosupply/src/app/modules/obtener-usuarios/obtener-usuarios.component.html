@@ -1,0 +1,6 @@
+<h1>Lista de Usuarios</h1>
+<ul>
+    <li *ngFor="let user of userList">
+        {{ user.name }} es {{ user.age >= 18 ? 'mayor' : 'menor' }} de edad
+    </li>
+</ul>
