@@ -9,7 +9,7 @@ import { UserDetail } from 'src/app/shared/interfaces/user-detail';
 export class ComunicacionComponentesComponent implements OnInit {
   
   detailView: UserDetail = {
-    age: 0,
+    age: 31,
     name: 'John'
   };
 

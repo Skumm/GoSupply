@@ -1,6 +1,8 @@
-<h1>Comunicacion entre componentes</h1>
-<p>Name: {{ detailView.name }}</p>
-<p>Age: {{ detailView.age }}</p>
-<app-user-settings>
+<div class="container-fluid">
+  <h1>Comunicación entre componentes</h1>
+  <p>Name: {{ detailView.name }}</p>
+  <p>Age: {{ detailView.age }}</p>
+  <app-user-settings>
     <app-user-info [userData]="detailView" (userAgeChange)="incrementUserAge()"></app-user-info>
-</app-user-settings>
+  </app-user-settings>
+</div>

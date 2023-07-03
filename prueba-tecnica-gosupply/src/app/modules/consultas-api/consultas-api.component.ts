@@ -31,7 +31,6 @@ export class ConsultasApiComponent implements OnInit {
   getCitiesByUserId() {
     this.usersService.getUsersData().subscribe({
       next: (res) => {
-        console.log('userData', res);
         this.citiesService.getCitiesByUserId(res[0].id).subscribe({
           next: (res) => {
             console.log('citieById', res);
